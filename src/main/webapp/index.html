@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="AppModule">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link   type="text/css"  href="stylesheets/bootstrap.min.css" rel="stylesheet"/>
+    <link   type="text/css"  href="stylesheets/angular-material.css" rel="stylesheet" />
+    <link   type="text/css"  href="stylesheets/docs.css" rel="stylesheet" />
+    <link   type="text/css"  href="stylesheets/center/center.css" rel="stylesheet"/>
+    <link   type="text/css"  href="stylesheets/menubar/menubar.css" rel="stylesheet"/>
+    <link   type="text/css"  href="stylesheets/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+
+        <div class="alert alert-info" style="max-width: 200px;margin: 10 auto 29px;border-radius: 8px;"  ng-if="window.location.hash == '#/login'">
+          <div ng-view></div>
+        </div>
+        <div  ng-if="window.location.hash != '#/login'">
+          <div ng-view></div>
+        </div>
+
+
+
+    <script type="text/javascript" src="libraries/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="libraries/angular.js"></script>
+    <script type="text/javascript" src="libraries/angular-animate.min.js"></script>
+    <script type="text/javascript" src="libraries/angular-route.min.js"></script>
+    <script type="text/javascript" src="libraries/angular-aria.min.js"></script>
+    <script type="text/javascript" src="libraries/angular-messages.min.js"></script>
+    <script type="text/javascript" src="libraries/angular-cookies.js"></script>
+    <script type="text/javascript" src="libraries/svg-assets-cache.js"></script>
+    <script type="text/javascript" src="libraries/angular-material.js"></script>
+    <script type="text/javascript" src="libraries/si-table/si-table.js"></script>
+
+    <!--Se cargan las clases a utilizar-->
+    <script type="text/javascript" src="models/Incidente.js"></script>
+    <script type="text/javascript" src="models/View.js"></script>
+    <!--Se cargan la app-->
+    <script src="app.js"></script>
+    <!--Se cargan los controllers de el proyecto aplicacion-->
+    <script type="text/javascript" src="aplicacion/modules/login/AuthenticationServices.js"></script>
+    <script type="text/javascript" src="aplicacion/modules/login/AuthenticationController.js"></script>
+    <script type="text/javascript" src="aplicacion/modules/home/HomeController.js"></script>
+    <script type="text/javascript" src="aplicacion/modules/abm-incidentes/IncidenteController.js"></script>
+    <script type="text/javascript" src="aplicacion/modules/abm-pantallas/AbmPantallaController.js"></script>
+  </body>
+
+</html>
