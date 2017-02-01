@@ -18,7 +18,7 @@ angular.module('HttpAuthModule')
     $routeProvider
         .when('/login', {
             controller: 'AuthenticationController',
-            templateUrl: 'login/modules/authentication/views/login.html',
+            templateUrl: 'aplicacion/modules/login/views/login.html',
             hideMenus: true
         })
 
